@@ -27,10 +27,12 @@ function App() {
   }
 
   let handleAdd = ()=>{
-    setInput('')
-    set(push(ref(db, 'notes/'), {
-      note: input,
-    }));
+    if (input != '') {
+      setInput('')
+      set(push(ref(db, 'notes/')), {
+        note: input,
+      });
+    }
   }
   
   return (
