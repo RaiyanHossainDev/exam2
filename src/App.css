@@ -1,0 +1,17 @@
+*{
+  font-family: sans-serif;
+}
+.holder {
+  @apply flex justify-center items-center h-screen flex-col gap-[40px]
+}
+
+input {
+  @apply bg-[#000000] border-[2px] border-[rgb(0,128,0)] outline-none px-[20px] py-[5px]
+  rounded-[8px] text-[lime] italic text-[20px]
+}
+button  {
+  @apply bg-[green] px-[10px] py-[5px] rounded-[5px] cursor-pointer 
+}
+h2 {
+  @apply text-[20px] w-[400px] flex justify-between items-center gap-[10px]
+}
